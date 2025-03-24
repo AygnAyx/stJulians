@@ -941,13 +941,23 @@ h2 {
     }
 
     .floating-button {
-        bottom: 15px;
-        right: 15px;
+        bottom: 23px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
     }
     /* Instagram butonu özel stil */
     .instagram-floating-button {
         bottom: 20px;
         left: 30px;
+    }
+    .instagram-floating-button::after {
+        content: ""; 
+        font-family: 'KaushanScript', cursive;
+    }
+    .floating-button::after {
+        content: ""; 
+        font-family: 'KaushanScript', cursive;
     }
 }
 

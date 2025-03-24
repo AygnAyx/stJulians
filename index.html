@@ -7,562 +7,540 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Üstteki sabit menü butonları 
-    <div class="menu-buttons">
-        <button onclick="scrollToPage(0)">Ana Sayfa</button>
-        <button onclick="scrollToPage(1)">Pizza</button>
-        <button onclick="scrollToPage(2)">Makarna</button>
-        <button onclick="scrollToPage(3)">Tatlı</button>
-        <button onclick="scrollToPage(4)">İçecekler</button>
-        <button onclick="scrollToPage(5)">Salatalar</button>
-        <button onclick="scrollToPage(6)">Atıştırmalıklar</button>
-        <button onclick="scrollToPage(7)">İletişim</button>
+<!-- Sayfalar (Butonlarla) -->
+<div class="page-scroll">
+<section id="page-0" class="page">
+    <div class="page-container">
+        <img src="images/logo.png" alt="Logo" id="logo">
     </div>
-        -->
-
-    <!-- Ana Sayfa (Butonlarla) -->
-    <div class="page-scroll">
-    <section id="page-0" class="page">
-        <div class="page-container">
-            <img src="images/logo.png" alt="Logo" id="logo">
-        </div>
-        <div class="menu-container">
-            <div class="menu-left">
-                <div class="button-container">
-                    <div class="base-square"></div>
-                    <div class="middle-square"></div>
-                    <div class="text-square" onclick="scrollToPage(1)" style="text-decoration: underline"><h2>Napolitan Pizza</h2></div>
-                </div>
-                <div class="button-container">
-                    <div class="base-square"></div>
-                    <div class="middle-square"></div>
-                    <div class="text-square" onclick="scrollToPage(2)" style="text-decoration: underline"><h2>Makarna</h2></div>
-                </div>
-                <div class="button-container">
-                    <div class="base-square"></div>
-                    <div class="middle-square"></div>
-                    <div class="text-square" onclick="scrollToPage(3)" style="text-decoration: underline">
-                        <h2><span class="line1">El Yapımı</span><span class="line2">Makarna</span></h2>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <div class="base-square"></div>
-                    <div class="middle-square"></div>
-                    <div class="text-square" onclick="scrollToPage(4)" style="text-decoration: underline"><h2>Salata</h2></div>
+    <div class="menu-container">
+        <div class="menu-left">
+            <div class="button-container">
+                <div class="base-square"></div>
+                <div class="middle-square"></div>
+                <div class="text-square" onclick="scrollToPage(1)" style="text-decoration: underline"><h2>Napolitan Pizza</h2></div>
+            </div>
+            <div class="button-container">
+                <div class="base-square"></div>
+                <div class="middle-square"></div>
+                <div class="text-square" onclick="scrollToPage(2)" style="text-decoration: underline"><h2>Makarna</h2></div>
+            </div>
+            <div class="button-container">
+                <div class="base-square"></div>
+                <div class="middle-square"></div>
+                <div class="text-square" onclick="scrollToPage(3)" style="text-decoration: underline">
+                    <h2><span class="line1">El Yapımı</span><span class="line2">Makarna</span></h2>
                 </div>
             </div>
-            <div class="menu-right">
-                <div class="button-container">
-                    <div class="base-square"></div>
-                    <div class="middle-square"></div>
-                    <div class="text-square" onclick="scrollToPage(5)" style="line-height: 1.2"><h2>
-                        <div style="text-decoration: underline">Kahve</div> 
-                        <div class="ampersand" style="position: relative; left: 10%;">&</div> 
-                        <div style="text-decoration: underline">Çay</div> 
-                    </h2></div>
-                </div>
-                <div class="button-container">
-                    <div class="base-square"></div>
-                    <div class="middle-square"></div>
-                    <div class="text-square" onclick="scrollToPage(6)" style="line-height: 1"><h2>
-                        <span style="text-decoration: underline">Kruvasan</span> 
-                        <div class="ampersand" style="position: relative; left: 10%;">&</div> 
-                        <span style="text-decoration: underline">Tiramisu</span> 
-                    </h2></div>
-                </div>
-                <div class="button-container">
-                    <div class="base-square"></div>
-                    <div class="middle-square"></div>
-                    <div class="text-square" onclick="scrollToPage(7)" style="text-decoration: underline; position: relative; top: 28%;"><h2>Soğuk İçecekler</h2></div>
-                </div>
+            <div class="button-container">
+                <div class="base-square"></div>
+                <div class="middle-square"></div>
+                <div class="text-square" onclick="scrollToPage(4)" style="text-decoration: underline"><h2>Salata</h2></div>
             </div>
         </div>
-    </section>
+        <div class="menu-right">
+            <div class="button-container">
+                <div class="base-square"></div>
+                <div class="middle-square"></div>
+                <div class="text-square" onclick="scrollToPage(5)" style="line-height: 1.2"><h2>
+                    <div style="text-decoration: underline">Kahve</div> 
+                    <div class="ampersand" style="position: relative; left: 10%;">&</div> 
+                    <div style="text-decoration: underline">Çay</div> 
+                </h2></div>
+            </div>
+            <div class="button-container">
+                <div class="base-square"></div>
+                <div class="middle-square"></div>
+                <div class="text-square" onclick="scrollToPage(6)" style="line-height: 1"><h2>
+                    <span style="text-decoration: underline">Kruvasan</span> 
+                    <div class="ampersand" style="position: relative; left: 10%;">&</div> 
+                    <span style="text-decoration: underline">Tiramisu</span> 
+                </h2></div>
+            </div>
+            <div class="button-container">
+                <div class="base-square"></div>
+                <div class="middle-square"></div>
+                <div class="text-square" onclick="scrollToPage(7)" style="text-decoration: underline; position: relative; top: 28%;"><h2>Soğuk İçecekler</h2></div>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
-
-    <button class="floating-button" onclick="scrollToTop2(0)">
-        <img src="images/home2.png" id="home">
-    </button>
-
-    <!-- Instagram Butonu (Yeni) -->
-    <a href="https://www.instagram.com/stjulianmersin/" target="_blank" class="instagram-floating-button">
-        <img src="images/inslogo.png" id="instagram">
-    </a>
-    <!-- Menü Sayfaları -->
-    <section id="page-1" class="page">
+<!-- Menü Sayfaları -->
+<section id="page-1" class="page">
     <div class="page-scroll">
         <div class="menu-title-container" style="padding-top: 20px;">
             <h2 style="color:#f38a49; border-bottom: 3px solid #f38a49">Napolitan Pizza</h2>
         </div>
-        <div class="menu-item-container">
-            <div class="menu-left-container">
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim2.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Margarita</b><br>Margherita</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>150 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Fesleğen ve Kuru Domates</b><br><span style="font-size: 18px">Pizza con Basilico e Pomodori Secchi</span></span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>180 TL</p>
-                </div>
-                <div class="divider"  style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Füme Etli Pizza</b><br>Pizza con Carne Affumicata</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>210 TL</p>
-                </div>
-                <div class="divider"  style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Tavuklu Barbekü Soslu Pizza</b><br><span style="font-size: 18px">Pizza con Pollo e Salsa Barbecue</span></span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>190 TL</p>
-                </div>
-                <div class="divider"  style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Dört Peynirli Pizza</b><br>Pizza ai Quattro Formaggi</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>180 TL</p>
-                </div>
-                <div class="divider2"  style="background-color: #f38a49"></div>
-            </div>
-            <div class="menu-right-container">
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Vejeteryan Pizza</b><br>Pizza Vegetariana</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>170 TL</p>
-                </div>
-                <div class="divider"  style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Sucuklu Pizza</b><br>Pizza con Salsiccia Turca</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>200 TL</p>
-                </div>
-                <div class="divider"  style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Biftekli Pizza</b><br>Pizza con Bistecca</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>220 TL</p>
-                </div>
-                <div class="divider"  style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Ton Balıklı Pizza</b><br>Pizza con Tonno</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>210 TL</p>
-                </div>
-                <div class="divider"  style="background-color: #f38a49"></div>
-                <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span  onclick="toggleContent(this)"><b>Tavuklu Pizza</b><br>Pizza con Pollo</span>
-                </div>
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>200 TL</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section id="page-2" class="page">
-    <div class="page-scroll">
-        <div class="menu-title-container" style="padding-top: 20px;">
-            <h2 style="color: #f3c365   ; border-bottom: 3px solid #f3c365  ">Makarna</h2>
-        </div>
-        <div class="menu-item-container">
-            <div class="menu-left-container">
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Acılı Penne Makarna</b><br>Penne Piccanti</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>160 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Limonlu Makarna</b><br>Pasta al Limone</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>170 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Fesleğen Soslu Makarna</b><br>Pasta al Pesto</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>170 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Ton Balıklı Makarna</b><br>Pasta al Tonno</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>200 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Patlıcanlı Makarna</b><br>Pasta alle Melanzane</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>170 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Köri Soslu Makarna</b><br>Pasta al Curry</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>150 TL</p>
-                </div>
-                <div class="divider2" style="background-color: #f3c365"></div>
-            </div>
-            <div class="menu-right-container">
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Domates Soslu Makarna</b><br>Pasta al Pomodoro</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>160 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Vejeteryan Makarna</b><br>Pasta Vegetariana</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>160 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Tavuklu Mantarlı Makarna</b><br>Pasta con Pollo e Funghi</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>180 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Dört Peynirli Makarna</b><br>Pasta ai Quattro Formaggi</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>170 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Biftekli Noodle</b><br>Noodles con Bistecca</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>190 TL</p>
-                </div>
-                <div class="divider" style="background-color: #f3c365"></div>
-                <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
-                <div class="menu-header">
-                    <div class="menu-image">
-                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                    </div>
-                    <span onclick="toggleContent(this)"><b>Kuru Domatesli Makarna</b><br>Pasta con Pomodori Secchi</span>
-                </div>    
-                    <div class="hidden-content" style="display: none; margin-top: 10px;">
-                        Bu makarna için özel sos içerikleri mevcuttur.
-                    </div>
-                    <p>180 TL</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section id="page-3" class="page">
-        <div class="page-scroll">
-            <div class="menu-title-container" style="padding-top: 20px;">
-                <h2>El Yapımı Makarna</h2>
-            </div>
+        <div class="mobile-page">
             <div class="menu-item-container">
-                <div class="menu-right-container" style="gap: 60px; margin-top: 40px;">
-                    <div class="menu-item" style="color: #c9fd06; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(94, 255, 0, 0.342), 0 0 5px rgba(94, 255, 0, 0.342);">
+                <div class="menu-left-container">
+                    <div class="menu-item">
                         <div class="menu-header">
                             <div class="menu-image">
-                                <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                                <img src="images/resim2.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
                             </div>
-                            <span onclick="toggleContent(this)"><b>Fettucini</b><br>Fettuccine Fatte a Mano</span>
+                            <span  onclick="toggleContent(this)"><b>Margarita</b><br>Margherita</span>
                         </div>
                         <div class="hidden-content" style="display: none; margin-top: 10px;">
                             Bu makarna için özel sos içerikleri mevcuttur.
                         </div>
-                        <p>170 TL</p>
+                        <p>150 TL</p>
                     </div>
-                    <div class="divider" style="background-color: #ffffff"></div>
-                    <div class="menu-item" style="color: #c9fd06; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(94, 255, 0, 0.342), 0 0 5px rgba(94, 255, 0, 0.342);">
+                    <div class="divider" style="background-color: #f38a49"></div>
+                    <div class="menu-item">
                         <div class="menu-header">
                             <div class="menu-image">
-                                <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
                             </div>
-                            <span onclick="toggleContent(this)"><b>Peynirli Tortelloni</b><br>Tortelloni Fatti a Mano al Formaggio</span>
+                            <span  onclick="toggleContent(this)"><b>Fesleğen ve Kuru Domates</b><br><span style="font-size: 18px">Pizza con Basilico e Pomodori Secchi</span></span>
                         </div>
                         <div class="hidden-content" style="display: none; margin-top: 10px;">
                             Bu makarna için özel sos içerikleri mevcuttur.
                         </div>
                         <p>180 TL</p>
                     </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Füme Etli Pizza</b><br>Pizza con Carne Affumicata</span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>210 TL</p>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Tavuklu Barbekü Soslu Pizza</b><br><span style="font-size: 18px">Pizza con Pollo e Salsa Barbecue</span></span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>190 TL</p>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Dört Peynirli Pizza</b><br>Pizza ai Quattro Formaggi</span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>180 TL</p>
+                    </div>
+                    <div class="divider2"  style="background-color: #f38a49"></div>
                 </div>
-                <div class="menu-left-container">
+                <div class="menu-right-container">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Vejeteryan Pizza</b><br>Pizza Vegetariana</span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>170 TL</p>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Sucuklu Pizza</b><br>Pizza con Salsiccia Turca</span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>200 TL</p>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Biftekli Pizza</b><br>Pizza con Bistecca</span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>220 TL</p>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Ton Balıklı Pizza</b><br>Pizza con Tonno</span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>210 TL</p>
+                    </div>
+                    <div class="divider"  style="background-color: #f38a49"></div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <div class="menu-image">
+                                <img src="images/resim.png" alt="Fettucini"  class="clickable-img" onclick="openModal('images/resim2.png')">
+                            </div>
+                            <span  onclick="toggleContent(this)"><b>Tavuklu Pizza</b><br>Pizza con Pollo</span>
+                        </div>
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>200 TL</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="page-4" class="page">
-        <div class="page-scroll">
-            <div class="menu-title-container" style="margin-right: 50px; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">
-                <h2 style="padding-top: 20px; border-bottom: 3px solid #7b024d; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">Salatalar</h2>
-            </div>
+    </div>
+</section>
+<section id="page-2" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 20px;">
+            <h2 style="color: #f3c365   ; border-bottom: 3px solid #f3c365  ">Makarna</h2>
+        </div>
+        <div class="mobile-page">
             <div class="menu-item-container">
-                <div class="menu-right-container" style="gap: 10px; margin-top: 40px;">
-                    <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                <div class="menu-left-container">
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
                     <div class="menu-header">
                         <div class="menu-image">
                             <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                        </div>    
-                        <span  onclick="toggleContent(this)"><b>Sezar Salata</b><br>Insalata Cesare</span>
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Acılı Penne Makarna</b><br>Penne Piccanti</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>160 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Limonlu Makarna</b><br>Pasta al Limone</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>170 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Fesleğen Soslu Makarna</b><br>Pasta al Pesto</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>170 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Ton Balıklı Makarna</b><br>Pasta al Tonno</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>200 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Patlıcanlı Makarna</b><br>Pasta alle Melanzane</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>170 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Köri Soslu Makarna</b><br>Pasta al Curry</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>150 TL</p>
+                    </div>
+                    <div class="divider2" style="background-color: #f3c365"></div>
+                </div>
+                <div class="menu-right-container">
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Domates Soslu Makarna</b><br>Pasta al Pomodoro</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>160 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Vejeteryan Makarna</b><br>Pasta Vegetariana</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>160 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Tavuklu Mantarlı Makarna</b><br>Pasta con Pollo e Funghi</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>180 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Dört Peynirli Makarna</b><br>Pasta ai Quattro Formaggi</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>170 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Biftekli Noodle</b><br>Noodles con Bistecca</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>190 TL</p>
+                    </div>
+                    <div class="divider" style="background-color: #f3c365"></div>
+                    <div class="menu-item" style="color: #f38a49; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(255, 153, 0, 0.342), 0 0 5px rgba(255, 153, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Kuru Domatesli Makarna</b><br>Pasta con Pomodori Secchi</span>
+                    </div>    
+                        <div class="hidden-content" style="display: none; margin-top: 10px;">
+                            Bu makarna için özel sos içerikleri mevcuttur.
+                        </div>
+                        <p>180 TL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-3" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 20px;">
+            <h2>El Yapımı Makarna</h2>
+        </div>
+        <div class="menu-item-container">
+            <div class="menu-right-container" style="gap: 60px; margin-top: 40px;">
+                <div class="menu-item" style="color: #c9fd06; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(94, 255, 0, 0.342), 0 0 5px rgba(94, 255, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Fettucini</b><br>Fettuccine Fatte a Mano</span>
+                    </div>
+                    <div class="hidden-content" style="display: none; margin-top: 10px;">
+                        Bu makarna için özel sos içerikleri mevcuttur.
+                    </div>
+                    <p>170 TL</p>
+                </div>
+                <div class="divider" style="background-color: #ffffff"></div>
+                <div class="menu-item" style="color: #c9fd06; text-shadow: 1.5px 1.5px 1px black, 0 0 25px rgba(94, 255, 0, 0.342), 0 0 5px rgba(94, 255, 0, 0.342);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>
+                        <span onclick="toggleContent(this)"><b>Peynirli Tortelloni</b><br>Tortelloni Fatti a Mano al Formaggio</span>
+                    </div>
+                    <div class="hidden-content" style="display: none; margin-top: 10px;">
+                        Bu makarna için özel sos içerikleri mevcuttur.
+                    </div>
+                    <p>180 TL</p>
+                </div>
+            </div>
+            <div class="menu-left-container">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="page-4" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="margin-right: 50px; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">
+            <h2 style="padding-top: 20px; border-bottom: 3px solid #7b024d; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">Salatalar</h2>
+        </div>
+        <div class="menu-item-container">
+            <div class="menu-right-container" style="gap: 10px; margin-top: 40px;">
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                <div class="menu-header">
+                    <div class="menu-image">
+                        <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                    </div>    
+                    <span  onclick="toggleContent(this)"><b>Sezar Salata</b><br>Insalata Cesare</span>
+                </div>
+                <div class="hidden-content" style="display: none; margin-top: 10px;">
+                    Bu salata için özel sos içerikleri mevcuttur.
+                </div>
+                    <p>170 TL</p>
+                </div>
+                <div class="divider" style="background-color: #7b024d"></div>
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>        
+                    <span  onclick="toggleContent(this)"><b>Gavurdağ Salatası</b><br>Insalata di Gavurdağı</span>
                     </div>
                     <div class="hidden-content" style="display: none; margin-top: 10px;">
                         Bu salata için özel sos içerikleri mevcuttur.
                     </div>
-                        <p>170 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #7b024d"></div>
-                    <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
-                        <div class="menu-header">
-                            <div class="menu-image">
-                                <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                            </div>        
-                        <span  onclick="toggleContent(this)"><b>Gavurdağ Salatası</b><br>Insalata di Gavurdağı</span>
-                        </div>
-                        <div class="hidden-content" style="display: none; margin-top: 10px;">
-                            Bu salata için özel sos içerikleri mevcuttur.
-                        </div>
-                        <p>200 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #7b024d"></div>
-                    <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
-                        <div class="menu-header">
-                            <div class="menu-image">
-                                <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                            </div>        
-                        <span  onclick="toggleContent(this)"><b>Akdeniz Salatası</b><br>Insalata Mediterranea</span>
-                        </div>
-                        <div class="hidden-content" style="display: none; margin-top: 10px;">
-                            Bu salata için özel sos içerikleri mevcuttur.
-                        </div>
-                        <p>220 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #7b024d"></div>
-                    <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
-                        <div class="menu-header">
-                            <div class="menu-image">
-                                <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
-                            </div>        
-                        <span  onclick="toggleContent(this)"><b>Yoğurtlu Salata</b><br>Insalata con Yogurt</span>
-                        </div>
-                        <div class="hidden-content" style="display: none; margin-top: 10px;">
-                            Bu salata için özel sos içerikleri mevcuttur.
-                        </div>
-                        <p>210 TL</p>
-                    </div>
+                    <p>200 TL</p>
                 </div>
-                <div class="menu-left-container">
+                <div class="divider" style="background-color: #7b024d"></div>
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>        
+                    <span  onclick="toggleContent(this)"><b>Akdeniz Salatası</b><br>Insalata Mediterranea</span>
+                    </div>
+                    <div class="hidden-content" style="display: none; margin-top: 10px;">
+                        Bu salata için özel sos içerikleri mevcuttur.
+                    </div>
+                    <p>220 TL</p>
                 </div>
+                <div class="divider" style="background-color: #7b024d"></div>
+                <div class="menu-item"  style="color: #c9fd06; text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgba(0, 0, 0, 0.192), 0 0 5px rgba(0, 0, 0, 0.171);">
+                    <div class="menu-header">
+                        <div class="menu-image">
+                            <img src="images/resim.png" alt="Fettucini" class="clickable-img" onclick="openModal('images/resim2.png')">
+                        </div>        
+                    <span  onclick="toggleContent(this)"><b>Yoğurtlu Salata</b><br>Insalata con Yogurt</span>
+                    </div>
+                    <div class="hidden-content" style="display: none; margin-top: 10px;">
+                        Bu salata için özel sos içerikleri mevcuttur.
+                    </div>
+                    <p>210 TL</p>
+                </div>
+            </div>
+            <div class="menu-left-container">
             </div>
         </div>
-    </section>
-
-    <section id="page-5" class="page">
-        <div class="page-scroll">
-            <div class="menu-title-container" style="padding-top: 20px;">
-                <h2 style="color: #a53f00; padding-top: 0px; border-bottom: 3px solid #a53f00; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">Kahve & Çay</h2>
+    </div>
+</section>
+<section id="page-5" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 20px;">
+            <h2 style="color: #a53f00; padding-top: 0px; border-bottom: 3px solid #a53f00; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);">Kahve & Çay</h2>
+        </div>
+        <div class="menu-item-container" style="transform: scale(1); column-gap: 0px;">
+            <div class="menu-right-container" style="margin-top: 40px; line-height: 0.6;">
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Espresso</span>
+                    <p style="text-align:right">80 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Americano</span>
+                    <p style="text-align:right">80 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Latte</span>
+                    <p style="text-align:right">90 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Cappuccino</span>
+                    <p style="text-align:right">90 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Filtre Kahve</span>
+                    <p style="text-align:right">70 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Türk Kahvesi</span>
+                    <p style="text-align:right">60 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Sıcak Çikolata</span>
+                    <p style="text-align:right">100 TL</p>
+                </div>
+                <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
+                <div class="menu-item" style="transform: scale(0.9); text-align:left">
+                    <span>Çay</span>
+                    <p style="text-align:right">20 TL</p>
+                </div>
             </div>
-            <div class="menu-item-container" style="transform: scale(1); column-gap: 0px;">
-                <div class="menu-right-container" style="margin-top: 40px; line-height: 0.8;">
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Espresso</span>
-                        <p style="text-align:right">80 TL</p>
-                    </div>
-                    <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Americano</span>
-                        <p style="text-align:right">80 TL</p>
-                    </div>
-                    <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Latte</span>
-                        <p style="text-align:right">90 TL</p>
-                    </div>
-                    <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Cappuccino</span>
-                        <p style="text-align:right">90 TL</p>
-                    </div>
-                    <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Filtre Kahve</span>
-                        <p style="text-align:right">70 TL</p>
-                    </div>
-                    <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Türk Kahvesi</span>
-                        <p style="text-align:right">60 TL</p>
-                    </div>
-                    <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Sıcak Çikolata</span>
-                        <p style="text-align:right">100 TL</p>
-                    </div>
-                    <div class="divider" style="max-width: 300px; background-color: #a53f00"></div>
-                    <div class="menu-item" style="transform: scale(0.9); text-align:left">
-                        <span>Çay</span>
-                        <p style="text-align:right">20 TL</p>
-                    </div>
-                </div>
-                <div class="menu-left-container">
-                </div>
+            <div class="menu-left-container">
             </div>
         </div>
-    </section>
-
-    <section id="page-6" class="page">
-        <div class="page-scroll">
-            <div class="menu-title-container" style="padding-top: 0px;">
-                <h2>Kruvasan & Tramisu</h2>
-            </div>
+    </div>
+</section>
+<section id="page-6" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container">
+            <h2>Kruvasan & Tramisu</h2>
+        </div>
+        <div class="mobile-page2">
             <div class="menu-item-container" style="gap: 0px; column-gap: 0px;">
                 <div class="menu-right-container" style="margin-top: 0px; line-height: 0.8;">
                     <div class="menu-item" style="text-align:left; flex-direction: start; max-width: 500px; padding: 30px 0px 15px 0px;">
@@ -632,83 +610,90 @@
                 </div>
                 <div class="menu-left-container" style="margin-top: 40px; line-height: 0.8;">
                 </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
-    <section id="page-7" class="page">
-        <div class="page-scroll">
-            <div class="menu-title-container" style="padding-top: 20px;">
-                <h2 style="color:#b10000; border-bottom: 3px solid #b10000">Soğuk İçecekler</h2>
-            </div>
-            <div class="menu-item-container">
-                <div class="menu-right-container" style="margin-top: 40px; line-height: 0.8;">
-                    <div class="menu-item" style="color:#ffffff; text-align:left; padding: 75px 0px 15px 0px";>
-                        <span>Coca Cola Şişe</span>
-                        <p style="text-align:right">50 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
-                    <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
-                        <span>Coca Cola Zero</span>
-                        <p style="text-align:right">50 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
-                    <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
-                        <span>Fanta</span>
-                        <p style="text-align:right">50 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
-                    <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
-                        <span>Sprite</span>
-                        <p style="text-align:right">50 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
-                    <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
-                        <span>Fuse Tea</span>
-                        <p style="text-align:right">50 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
-                    <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
-                        <span>Soda</span>
-                        <p style="text-align:right">25 TL</p>
-                    </div>
-                    <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
-                    <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
-                        <span>Su</span>
-                        <p style="text-align:right">20 TL</p>
-                    </div>
+<section id="page-7" class="page">
+    <div class="page-scroll">
+        <div class="menu-title-container" style="padding-top: 20px;">
+            <h2 style="color:#b10000; border-bottom: 3px solid #b10000">Soğuk İçecekler</h2>
+        </div>
+        <div class="menu-item-container">
+            <div class="menu-right-container" style="margin-top: 40px; line-height: 0.8;">
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 75px 0px 15px 0px";>
+                    <span>Coca Cola Şişe</span>
+                    <p style="text-align:right">50 TL</p>
                 </div>
-                <div class="menu-left-container">
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Coca Cola Zero</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Fanta</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Sprite</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Fuse Tea</span>
+                    <p style="text-align:right">50 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Soda</span>
+                    <p style="text-align:right">25 TL</p>
+                </div>
+                <div class="divider" style="background-color: #b10000; max-width: 350px;"></div>
+                <div class="menu-item" style="color:#ffffff; text-align:left; padding: 15px 0px";>
+                    <span>Su</span>
+                    <p style="text-align:right">20 TL</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="page-8" class="page-scroll">
-        <div class="page-container">
-            <!-- Instagram QR (Sola Yaslı) -->
-            <div class="qr-left">
-                <a href="https://www.instagram.com/stjulianmersin/" target="_blank">
-                    <img src="images/qr1.png" alt="Instagram QR">
-                </a>
-                <p class="instagram-text">@StJulianersin</p>
-            </div>
-    
-            <!-- Orta Logo -->
-            <div class="logo-container">
-                <img src="images/logo-trans.png" alt="St. Julian Logo">
-            </div>
-    
-            <!-- Konum QR (Sağa Yaslı) -->
-            <div class="qr-right">
-                <a href="https://www.google.com/maps/place/By+Tacos/@36.7735367,34.5403919,20.25z/data=!4m6!3m5!1s0x15278ac2ead7db65:0x1ee602e4a5bd3a28!8m2!3d36.7736472!4d34.5400015!16s%2Fg%2F11klvxvykk?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
-                    <img src="images/qr2.png" alt="Konum QR">
-                </a>
-                <p class="address-text">Çiftlikköy Mh, Akademi plaza<br>41/AB, 33110<br>Yenişehir/Mersin</p>
+            <div class="menu-left-container">
             </div>
         </div>
-    </section>    
+    </div>
+</section>
+<section id="page-8" class="page-scroll">
+    <div class="page-container">
+        <!-- Instagram QR (Sola Yaslı) -->
+        <div class="qr-left">
+            <a href="https://www.instagram.com/stjulianmersin/" target="_blank">
+                <img src="images/qr1.png" alt="Instagram QR">
+            </a>
+            <p class="instagram-text">@StJulianersin</p>
+        </div>
+
+        <!-- Orta Logo -->
+        <div class="logo-container">
+            <img src="images/logo-trans.png" alt="St. Julian Logo">
+        </div>
+
+        <!-- Konum QR (Sağa Yaslı) -->
+        <div class="qr-right">
+            <a href="https://www.google.com/maps/place/By+Tacos/@36.7735367,34.5403919,20.25z/data=!4m6!3m5!1s0x15278ac2ead7db65:0x1ee602e4a5bd3a28!8m2!3d36.7736472!4d34.5400015!16s%2Fg%2F11klvxvykk?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <img src="images/qr2.png" alt="Konum QR">
+            </a>
+            <p class="address-text">Çiftlikköy Mh, Akademi plaza<br>41/AB, 33110<br>Yenişehir/Mersin</p>
+        </div>
+    </div>
+</section>    
     
+<!-- Home Butonu (Yeni) -->
+<button class="floating-button" onclick="scrollToTop2(0)">
+    <img src="images/home2.png" id="home">
+</button>
+<!-- Instagram Butonu (Yeni) -->
+<a href="https://www.instagram.com/stjulianmersin/" target="_blank" class="instagram-floating-button">
+    <img src="images/inslogo.png" id="instagram">
+</a>
 
 <!-- Modal Penceresi -->
 <div id="imageModal" class="modal">

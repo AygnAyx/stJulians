@@ -536,7 +536,7 @@ h2 {
 .floating-button {
     z-index: 999;
     position: fixed;
-    bottom: 35px;
+    bottom: 33px;
     right: 20px;
     display: flex;
     justify-content: center;
@@ -552,8 +552,8 @@ h2 {
 
 /* Buton içindeki görsel */
 .floating-button img {
-    width: 65px;
-    height: 65px;
+    width: 67px;
+    height: 67px;
 }
 
 /* Hover efekti */
@@ -941,7 +941,7 @@ h2 {
     }
 
     .floating-button {
-        bottom: 24px;
+        bottom: 23px;
         right: 25px;
         width: 50px;
         height: 50px;

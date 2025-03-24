@@ -952,11 +952,11 @@ h2 {
         left: 30px;
     }
     .instagram-floating-button::after {
-        content: ""; 
+        content: "AA"; 
         font-family: 'KaushanScript', cursive;
     }
     .floating-button::after {
-        content: ""; 
+        content: "AA"; 
         font-family: 'KaushanScript', cursive;
     }
 }

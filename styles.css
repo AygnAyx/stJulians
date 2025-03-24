@@ -534,6 +534,7 @@ h2 {
 
 /* Butonun başlangıç stili */
 .floating-button {
+    z-index: 999;
     position: fixed;
     bottom: 35px;
     right: 20px;
@@ -929,6 +930,24 @@ h2 {
     .divider2 {
         width: 90%;
         display: block;
+    }
+    .instagram-floating-button img {
+        width: 45px;
+        height: 45px;
+    }
+    .floating-button img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .floating-button {
+        bottom: 15px;
+        right: 15px;
+    }
+    /* Instagram butonu özel stil */
+    .instagram-floating-button {
+        bottom: 20px;
+        left: 30px;
     }
 }
 
